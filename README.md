@@ -203,6 +203,9 @@ In the jupyter notebook <cite>Find_OtherImgs.ipynb</cite> (<a href="https://gith
 </div>
 
 ### Evaluation of Model Performance
+
+The following table shows the performance metrics of three different models (V1, V2, and V3) and their fine-tuned versions (R1).The table clearly shows that all models experience an improvement in both accuracy and F1 score after fine-tuning. The improvements are especially significant for models V2 and V3, which show a greater increase in accuracy and F1 score compared to V1. 
+
 <div style="margin: auto; text-align: center;">
   <div style="display: inline-block;">
     <table>
