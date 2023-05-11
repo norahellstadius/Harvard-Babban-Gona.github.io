@@ -136,7 +136,7 @@ During training, initially first layer of the ResNet50 model is frozen. This is 
 
 ## Evaluation of Model Performance
 
-The performance of each model was evaluated based on loss (binary cross-entropy), accuracy and F1 score. Model 2 showed the best performance of all three models with a loss, accuracy and F1 score of 0.431, 0.925 and  0.953 respectively. 
+The performance of each model was evaluated based on loss (binary cross-entropy), accuracy and F1 score. 
 
 <div style="margin: auto; text-align: center;">
   <div style="display: inline-block;">
