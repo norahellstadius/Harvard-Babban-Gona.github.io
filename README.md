@@ -364,6 +364,7 @@ Overall, the results demonstrate that the second round of fine-tuning of the mod
   </div>
 </div>
 
+Ultimately our results confirm that we were successful in training a classifier that is able to identify out-of-distribution images. On a random sample of 1000 images, the model identified 31 'other' images, which 5 of them were false negatives. Extrapolating, we can estimate that we will therefore expect a 2.6% increase in downstream models' performances. 
 ## Interpretability
 
 Understanding and trusting machine learning models can often be a challenging task. However, there are techniques available to enhance interpretability, such as the utilization of saliency maps generated using GradCAM heatmaps. Before we analyse our  saliency maps, let's gain a better understanding of what GradCAM is and how it works.
