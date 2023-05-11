@@ -21,7 +21,7 @@ In this project our team collaborated with Babban Gona team to create a two-part
 
 <br>
 <div style="text-align:center; border: 2px solid #4285f4; padding: 10px;">
-  <h2>Plant Health Assesment</h2>
+  <h2>Soil Health Assesment</h2>
   <p>The objective of this part of project was to differentiate plant regions from soil and categorize plants as yellow, purple, or best practice. The Babban Gona team had previously developed an object detection model with 80% accuracy on laboratory data, but encountered difficulties when applied to production data due to the lack of labeled production data.To address this challenge, an unsupervised segmentation algorithm was utilized, employing a CNN for feature extraction and clustering, and training the CNN on loss based on the closeness of features and spatial continuity. An algorithm was then employed to mask out labels that were not plant-based based on their RGB color and green color percentage. Finally, individual plant images were input into a trained ResNet-50 for soil health classification. The proposed approach was benchmarked against the Yolov5 method used by the Babban Gona team to evaluate its performance on noisy production data. 
 </p>
 </div>
@@ -144,26 +144,26 @@ The performance of each model was evaluated based on loss (binary cross-entropy)
       <tr>
         <th>Metrics \ Models</th>
         <th>V1</th>
-        <th><span style="color: #ffab40">V2</span></th>
+        <th>V2</th>
         <th>V3</th>
       </tr>
       <tr>
         <td>Loss</td>
-        <td>0.435</td>
-        <td><span style="color: #ffab40">0.431</span></td>
-        <td>0.443</td>
+        <td>0.697</td>
+        <td>0.616</td>
+        <td>0.500</td>
       </tr>
       <tr>
         <td>Accuracy</td>
-        <td>0.918</td>
-        <td><span style="color: #ffab40">0.925</span></td>
-        <td>0.924</td>
+        <td>0.893</td>
+        <td>0.887</td>
+        <td>0.912</td>
       </tr>
       <tr>
         <td>F1 Score</td>
-        <td>0.949</td>
-        <td><span style="color: #ffab40">0.953</span></td>
-        <td>0.952</td>
+        <td>0.933</td>
+        <td>0.929</td>
+        <td>0.944</td>
       </tr>
     </table>
   </div>
@@ -208,27 +208,39 @@ In the jupyter notebook <cite>Find_OtherImgs.ipynb</cite> (<a href="https://gith
     <table>
       <tr>
         <th>Metrics \ Models</th>
-        <th>V1 fine-tuned</th>
-        <th><span style="color: #ffab40">V2 fine-tuned</span></th>
-        <th>V3 fine-tuned</th>
+        <th>V1</th>
+        <th>V2</th>
+        <th>V3</th>
+        <th>V1 fine-tuned (R1)</th>
+        <th>V2 fine-tuned (R1)</th>
+        <th>V3 fine-tuned (R1)</th>
       </tr>
       <tr>
         <td>Loss</td>
-        <td>0.435</td>
-        <td><span style="color: #ffab40">0.431</span></td>
-        <td>0.443</td>
+        <td>0.697</td>
+        <td>0.616</td>
+        <td>0.500</td>
+        <td>0.419</td>
+        <td>0.503</td>
+        <td>0.455</td>
       </tr>
       <tr>
         <td>Accuracy</td>
-        <td>0.918</td>
-        <td><span style="color: #ffab40">0.925</span></td>
-        <td>0.924</td>
+        <td>0.893</td>
+        <td>0.887</td>
+        <td>0.912</td>
+        <td>0.912</td>
+        <td>0.925</td>
+        <td>0.931</td>
       </tr>
       <tr>
         <td>F1 Score</td>
-        <td>0.949</td>
-        <td><span style="color: #ffab40">0.953</span></td>
-        <td>0.952</td>
+        <td>0.933</td>
+        <td>0.929</td>
+        <td>0.944</td>
+        <td>0.942</td>
+        <td>0.950</td>
+        <td>0.955</td>
       </tr>
     </table>
   </div>
@@ -294,27 +306,51 @@ The code for this can be found in the file <a href="https://github.com/Harvard-I
     <table>
       <tr>
         <th>Metrics \ Models</th>
+        <th>V1</th>
+        <th>V2</th>
+        <th>V3</th>
+        <th>V1 fine-tuned (R1)</th>
+        <th>V2 fine-tuned (R1)</th>
+        <th>V3 fine-tuned (R1)</th>
         <th>V1 fine-tuned (R2)</th>
-        <th><span style="color: #ffab40">V2 fine-tuned (R2)</span></th>
+        <th>V2 fine-tuned (R2)</th>
         <th>V3 fine-tuned (R2)</th>
       </tr>
       <tr>
         <td>Loss</td>
-        <td>0.435</td>
-        <td><span style="color: #ffab40">0.431</span></td>
-        <td>0.443</td>
+        <td>0.697</td>
+        <td>0.616</td>
+        <td>0.500</td>
+        <td>0.419</td>
+        <td>0.503</td>
+        <td>0.455</td>
+	<td>0.360</td>
+        <td>0.470</td>
+        <td>0.331</td>
       </tr>
       <tr>
         <td>Accuracy</td>
-        <td>0.918</td>
-        <td><span style="color: #ffab40">0.925</span></td>
-        <td>0.924</td>
+        <td>0.893</td>
+        <td>0.887</td>
+        <td>0.912</td>
+        <td>0.912</td>
+        <td>0.925</td>
+        <td>0.931</td>
+        <td>0.937</td>
+        <td>0.925</td>
+        <td>0.937</td>
       </tr>
       <tr>
         <td>F1 Score</td>
-        <td>0.949</td>
-        <td><span style="color: #ffab40">0.953</span></td>
-        <td>0.952</td>
+        <td>0.933</td>
+        <td>0.929</td>
+        <td>0.944</td>
+        <td>0.942</td>
+        <td>0.950</td>
+        <td>0.955</td>
+	<td>0.959</td>
+        <td>0.951</td>
+        <td>0.960</td>
       </tr>
     </table>
   </div>
@@ -329,8 +365,7 @@ Understanding and trusting machine learning models can often be a challenging ta
 </div>
 
 <br>
-Below we see the saliency maps of images classified as "other" and images classified as "plants." The saliency maps generated for these images reveal interesting insights into the model's behavior.Upon observing the saliency map for the image classified as a plant, we can ascertain that the model accurately focuses on the relevant part, namely the plant, in order to classify it correctly. This suggests that the model recognizes the distinctive features of plants and utilizes them to make accurate predictions.
-Similarly, when examining the saliency map for the image classified as "other," we notice that the model concentrates on the head of the motor cycle.
+Below we see the saliency maps of images classified as "other" and images classified as "plants." As mentioned previously, before we had an issue that the model was focusing on the background (i.e dirt) to classify an image as a plant. However after fine-tuning, the saliency maps reveal that the model accurately focuses on the relevant part, namely the plant, in order to classify it correctly. This suggests that the model recognizes the distinctive features of plants and utilizes them to make accurate predictions. Similarly, when examining the saliency map for the image classified as "other," we notice that the model concentrates on the head of the motor cycle.
 
 <div style="text-align:center;">
   <img src="images/saliency_plant.png" alt="Image visualizing the above 2-6 steps"/>
@@ -361,7 +396,7 @@ model = tf.keras.models.load_model(path_model, custom_objects={'weighted_loss_fn
                                                                  'accuracy': accuracy})
 ```
 
-# Plant Health Assesment
+# Soil Health Assesment
 
 ## Overiew of the problem
 <div align="center"><div style="background-color: lightgrey; padding: 5px;"><strong>Big Picture</strong></div></div>
@@ -411,6 +446,30 @@ The above approach does not work well on both lab data and production data due t
 
 1. The ELM algorithm relies solely on the RGB values of the pixels as input features. This limited feature representation might not be sufficient to accurately discriminate between irregular and regular pixels in the images. A better classification model could incorporate additional features or utilize more advanced techniques for feature extraction to enhance the representation power.
 2. ELM might not generalize well to unseen production data. A better classification model should have a higher generalization ability, capable of effectively handling variations, noise, and diverse data distributions encountered in both the lab and production data.
+
+## Model Pipeline
+![](images/SoilHealthPipeline.png)
+
+### Image Segmentation
+
+We use a simple CNN model to do feature clustering.
+
+![](images/image_segmentation_feature_clustering.png)
+
+![](images/image_segmentation_2.png)
+
+### Extra Scribble Feature
+
+We can briefly scribble the image and use that to guide the segmentation algorithm.
+
+![](images/scribble_loss.png)*New loss function with scribble*
+
+By using this scribble loss, it encourages the algorithm to make features close to the scribble the same class as the scribble, 
+which means that you want to scribble on features that you think should be classified as the same class.
+
+![](images/scribble_show.jpg)*Original image*  | ![](images/scribble_scribble.png)*Scribble*
+:-------------------------:|:-------------------------:
+![](images/scribble_with.png)*With scribble*  |  ![](images/scribble_without.png)*Without scribble*
 
 ### Segment Anything
 In our attempt to try to segment out the plants from the images, we also tried the latest invention from Meta FAIR -- Segment Anything Model <cite>SAM</cite> (<a href="https://arxiv.org/abs/2007.09990">source</a>). 
@@ -617,7 +676,9 @@ After we get the cropped labaled plant image from the Yolo dataset, we use it to
 
     In this case, we compare the performance of VGG-11 and VGG-13, both using batch normalization. 
 
-    
+VGG-11 w/ batch normalization  | VGG-13 w/ batch normalization
+:-------------------------:|:-------------------------:
+<img src="images/VCG11.png" width="500" />*Best Valid Acc: 87.02%* |  <img src="images/VCG13.png" width="500" />*Best Valid Acc: 88.92%*
 
 3. Preprocessing of the production data:
 
