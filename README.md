@@ -307,7 +307,7 @@ The code for this can be found in the file <a href="https://github.com/Harvard-I
 
 The table shows the performance of different versions (V1, V2, V3) of a model before and after fine-tuning (R1, R2) in terms of loss, accuracy, and F1 score. 
 
-Overall, the results demonstrate that the fine-tuning of the models has led to improvements in all three metrics. For example, the F1 score has increased from the initial versions to the fine-tuned versions for all three models, and the increases are greater for R2 fine-tuning compared to R1 fine-tuning. Additionally, the table shows that the models V1 and V3 have benefited more from the R2 fine-tuning, as evidenced by the larger improvements in accuracy and F1 score compared to V2.
+Overall, the results demonstrate that the second round of fine-tuning of the models has led to improvements in all three metrics. For example, the F1 score has increased from the initial versions to the fine-tuned versions for all three models, and the increases are greater for R2 fine-tuning compared to R1 fine-tuning. Additionally, the table shows that the models V1 and V3 have benefited more from the R2 fine-tuning, as evidenced by the larger improvements in accuracy and F1 score compared to V2.
 
 <div style="margin: auto; text-align: center;">
   <div style="display: inline-block;">
