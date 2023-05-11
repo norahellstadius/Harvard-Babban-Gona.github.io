@@ -390,6 +390,8 @@ Below we see the saliency maps of images classified as "other" and images classi
 <section id="plant-health-section">
 </section>
 
+The code for this can be found in the file <a href="https://github.com/Harvard-IACS/Babban_Gona/blob/main/plant_other_classifier/Saliency_maps.ipynb">Saliency_maps.ipynb</a>.
+
 ## How to use the final model
 The trained models can be downloaded from Google Drive using the following <a href="https://drive.google.com/drive/folders/1BxEbmD3VNKrYyoK32oofAeRCGFOYzwSJ?usp=share_link">link</a>. The models from the 3 rounds of training are found in the folders <cite>first_iteration_training</cite>, <cite>second_iteration_training</cite>, and <cite>final</cite>. 
 The model from the first round of training can be loaded using the following code,
